@@ -1,0 +1,8 @@
+bin/
+obj/
+/packages/
+riderModule.iml
+/_ReSharper.Caches/
+TrophyStones.sln.DotSettings.user
+.idea
+.vs

@@ -1,0 +1,14 @@
+ManifestFileVersion: 0
+CRC: 798723191
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: fonts/replacements
+      Dependencies: {}
+    Info_1:
+      Name: general/ui/session_player_list
+      Dependencies:
+        Dependency_0: fonts/replacements
+    Info_2:
+      Name: trophystonebundle
+      Dependencies: {}

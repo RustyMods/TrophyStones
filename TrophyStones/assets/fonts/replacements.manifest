@@ -1,0 +1,128 @@
+ManifestFileVersion: 0
+CRC: 2660387306
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: ff18eb5bfcdd04c153e06a92a6175113
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 93c9975f2f2eda961225b16d95aac6c4
+HashAppended: 0
+ClassTypes:
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 49
+  Script: {instanceID: 0}
+- Class: 128
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/ui/fonts/noto/noto_sans_georgian/NotoSansGeorgian-VariableFont_wdth,wght.ttf
+- Assets/ui/fonts/noto/noto_sans/NotoSans-LightItalic.ttf
+- Assets/ui/fonts/noto/noto_sans_sc/NotoSansSC-Regular.otf
+- Assets/ui/fonts/noto/noto_serif_georgian/Font Material.mat
+- Assets/ui/fonts/noto/noto_serif/NotoSerif-Bold.ttf
+- Assets/ui/fonts/noto/noto_serif_georgian/NotoSerifGeorgian-VariableFont_wdth,wght.ttf
+- Assets/ui/fonts/noto/noto_sans/Font Material_4.mat
+- Assets/ui/fonts/noto/noto_naskh_arabic/NotoSansArabicUI[wdth,wght].ttf
+- Assets/ui/fonts/noto/noto_sans_georgian/README.txt
+- Assets/ui/fonts/noto/noto_serif_devanagari/NotoSerifDevanagari-VariableFont_wdth,wght.ttf
+- Assets/ui/fonts/noto/noto_emoji/NotoEmoji-VariableFont_wght.ttf
+- Assets/ui/fonts/noto/noto_serif/NotoSerif-BoldItalic.ttf
+- Assets/ui/fonts/noto/noto_serif_armenian/NotoSerifArmenian-VariableFont_wdth,wght.ttf
+- Assets/ui/fonts/noto/noto_sans_armenian/README.txt
+- Assets/ui/fonts/noto/noto_sans_sc/OFL.txt
+- Assets/ui/fonts/noto/noto_naskh_arabic/OFL.txt
+- Assets/ui/fonts/noto/noto_serif_jp/NotoSerifJP-Regular.otf
+- Assets/ui/fonts/noto/noto_serif_thai/README.txt
+- Assets/ui/fonts/noto/noto_sans_jp/OFL.txt
+- Assets/ui/fonts/noto/noto_serif_jp/Font Material.mat
+- Assets/ui/fonts/noto/noto_serif_thai/Font Material.mat
+- Assets/ui/fonts/noto/noto_serif/Font Material.mat
+- Assets/ui/fonts/noto/noto_sans_devanagari/Font Material.mat
+- Assets/ui/fonts/noto/noto_emoji/Font Material_0.mat
+- Assets/ui/fonts/noto/noto_serif_bengali/OFL.txt
+- Assets/ui/fonts/noto/noto_sans_thai/OFL.txt
+- Assets/ui/fonts/noto/noto_symbols/NotoSansSymbols-VariableFont_wght.ttf
+- Assets/ui/fonts/noto/noto_serif_malayalam/Font Material.mat
+- Assets/ui/fonts/noto/noto_sans_sc/Font Material.mat
+- Assets/ui/fonts/noto/noto_serif_devanagari/README.txt
+- Assets/ui/fonts/noto/noto_serif_georgian/README.txt
+- Assets/ui/fonts/noto/noto_sans_jp/NotoSansJP-Regular.otf
+- Assets/ui/fonts/noto/noto_sans_malayalam/OFL.txt
+- Assets/ui/fonts/noto/noto_sans/OFL.txt
+- Assets/ui/fonts/noto/noto_sans_kr/NotoSansKR-Regular.otf
+- Assets/ui/fonts/noto/noto_serif_malayalam/OFL.txt
+- Assets/ui/fonts/noto/noto_serif_sc/Font Material.mat
+- Assets/ui/fonts/noto/noto_sans/NotoSans-Italic.ttf
+- Assets/ui/fonts/noto/noto_sans/Font Material_0.mat
+- Assets/ui/fonts/noto/noto_sans/NotoSans-Light.ttf
+- Assets/ui/fonts/noto/noto_sans_thai/Font Material.mat
+- Assets/ui/fonts/noto/noto_sans_devanagari/README.txt
+- Assets/ui/fonts/noto/noto_symbols/Font Material_0.mat
+- Assets/ui/fonts/noto/noto_serif_thai/OFL.txt
+- Assets/ui/fonts/noto/noto_serif/OFL.txt
+- Assets/ui/fonts/noto/noto_serif_bengali/NotoSerifBengali-VariableFont_wdth,wght.ttf
+- Assets/ui/fonts/noto/noto_sans_devanagari/OFL.txt
+- Assets/ui/fonts/noto/noto_sans_armenian/OFL.txt
+- Assets/ui/fonts/noto/noto_serif/Font Material_1.mat
+- Assets/ui/fonts/noto/noto_sans_bengali/OFL.txt
+- Assets/ui/fonts/noto/noto_sans_thai/README.txt
+- Assets/ui/fonts/noto/noto_sans/Font Material_3.mat
+- Assets/ui/fonts/noto/noto_sans_armenian/Font Material.mat
+- Assets/ui/fonts/noto/noto_sans/NotoSans-Regular.ttf
+- Assets/ui/fonts/noto/noto_sans/Font Material_2.mat
+- Assets/ui/fonts/noto/noto_serif_devanagari/OFL.txt
+- Assets/ui/fonts/noto/noto_serif_armenian/Font Material.mat
+- Assets/ui/fonts/noto/noto_sans_kr/OFL.txt
+- Assets/ui/fonts/noto/noto_serif/NotoSerif-Regular.ttf
+- Assets/ui/fonts/noto/noto_serif_jp/OFL.txt
+- Assets/ui/fonts/noto/noto_serif_armenian/README.txt
+- Assets/ui/fonts/noto/noto_emoji/NotoColorEmoji-Regular.ttf
+- Assets/ui/fonts/noto/noto_serif/Font Material_2.mat
+- Assets/ui/fonts/noto/noto_emoji/Font Material.mat
+- Assets/ui/fonts/noto/noto_serif_devanagari/Font Material.mat
+- Assets/ui/fonts/noto/noto_serif_sc/NotoSerifSC-Regular.otf
+- Assets/ui/fonts/noto/noto_naskh_arabic/README.txt
+- Assets/ui/fonts/noto/noto_sans/NotoSans-BoldItalic.ttf
+- Assets/ui/fonts/noto/noto_symbols/NotoSansSymbols2-Regular.ttf
+- Assets/ui/fonts/noto/noto_sans_malayalam/NotoSansMalayalam-VariableFont_wdth,wght.ttf
+- Assets/ui/fonts/noto/noto_sans_malayalam/README.txt
+- Assets/ui/fonts/noto/noto_sans_devanagari/NotoSansDevanagari-VariableFont_wdth,wght.ttf
+- Assets/ui/fonts/noto/noto_naskh_arabic/Font Material_0.mat
+- Assets/ui/fonts/noto/noto_serif_bengali/Font Material.mat
+- Assets/ui/fonts/noto/noto_emoji/OFL.txt
+- Assets/ui/fonts/noto/noto_naskh_arabic/Font Material.mat
+- Assets/ui/fonts/noto/noto_serif_thai/NotoSerifThai-VariableFont_wdth,wght.ttf
+- Assets/ui/fonts/noto/noto_naskh_arabic/NotoNaskhArabicUI[wght].ttf
+- Assets/ui/fonts/noto/noto_sans/Font Material.mat
+- Assets/ui/fonts/noto/noto_serif_georgian/OFL.txt
+- Assets/ui/fonts/noto/noto_serif_kr/OFL.txt
+- Assets/ui/fonts/noto/noto_serif/NotoSerif-Italic.ttf
+- Assets/ui/fonts/noto/noto_serif/Font Material_0.mat
+- Assets/ui/fonts/noto/noto_emoji/README.txt
+- Assets/ui/fonts/noto/noto_sans_georgian/Font Material.mat
+- Assets/ui/fonts/noto/noto_sans/Font Material_1.mat
+- Assets/ui/fonts/noto/noto_sans_kr/Font Material.mat
+- Assets/ui/fonts/noto/noto_sans_jp/Font Material.mat
+- Assets/ui/fonts/noto/noto_sans_bengali/README.txt
+- Assets/ui/fonts/noto/noto_sans_malayalam/Font Material.mat
+- Assets/ui/fonts/noto/noto_sans_thai/NotoSansThai-VariableFont_wdth,wght.ttf
+- Assets/ui/fonts/noto/noto_serif_sc/OFL.txt
+- Assets/ui/fonts/noto/noto_sans/NotoSans-Bold.ttf
+- Assets/ui/fonts/noto/noto_symbols/Font Material.mat
+- Assets/ui/fonts/noto/noto_serif_malayalam/README.txt
+- Assets/ui/fonts/noto/noto_serif_kr/NotoSerifKR-Regular.otf
+- Assets/ui/fonts/noto/noto_serif_kr/Font Material.mat
+- Assets/ui/fonts/noto/noto_sans_georgian/OFL.txt
+- Assets/ui/fonts/noto/noto_serif_bengali/README.txt
+- Assets/ui/fonts/noto/noto_sans_armenian/NotoSansArmenian-VariableFont_wdth,wght.ttf
+- Assets/ui/fonts/noto/noto_sans_bengali/Font Material.mat
+- Assets/ui/fonts/noto/noto_sans_bengali/NotoSansBengali-VariableFont_wdth,wght.ttf
+- Assets/ui/fonts/noto/noto_serif_malayalam/NotoSerifMalayalam-VariableFont_wght.ttf
+- Assets/ui/fonts/noto/noto_serif_armenian/OFL.txt
+Dependencies: []
