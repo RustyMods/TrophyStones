@@ -15,8 +15,10 @@ using ServerSync;
 using SkillManager;
 using StatusEffectManager;
 using UnityEngine;
+using CraftingTable = ItemManager.CraftingTable;
 using PrefabManager = ItemManager.PrefabManager;
 using Range = LocationManager.Range;
+
 
 namespace TrophyStones
 {
@@ -62,13 +64,13 @@ namespace TrophyStones
             #region PieceManager Example Code
 
             // Globally turn off configuration options for your pieces, omit if you don't want to do this.
-            BuildPiece.ConfigurationEnabled = false;
+            // BuildPiece.ConfigurationEnabled = false;
             
             BuildPiece BossStoneEikthyrBuildable = new("trophystonebundle", "BossStone_Eikthyr_Buildable", "assets");
             BossStoneEikthyrBuildable.Name.English("Eikthyr Stone");
             BossStoneEikthyrBuildable.Description.English("");
             BossStoneEikthyrBuildable.RequiredItems.Add("Stone", 20, true);
-            BossStoneEikthyrBuildable.RequiredItems.Add("HardAntler", 1, true);
+            BossStoneEikthyrBuildable.RequiredItems.Add("Flint", 10, true);
             BossStoneEikthyrBuildable.Category.Add(PieceManager.BuildPieceCategory.Misc);
             BossStoneEikthyrBuildable.Crafting.Set(PieceManager.CraftingTable.StoneCutter);
             BossStoneEikthyrBuildable.Snapshot();
@@ -77,7 +79,7 @@ namespace TrophyStones
             BossStoneElderBuildable.Name.English("Elder Stone");
             BossStoneElderBuildable.Description.English("");
             BossStoneElderBuildable.RequiredItems.Add("Stone", 20, true);
-            BossStoneElderBuildable.RequiredItems.Add("AncientSeed", 10, true);
+            BossStoneElderBuildable.RequiredItems.Add("Bronze", 10, true);
             BossStoneElderBuildable.Category.Add(PieceManager.BuildPieceCategory.Misc);
             BossStoneElderBuildable.Crafting.Set(PieceManager.CraftingTable.StoneCutter);
             BossStoneElderBuildable.Snapshot();
@@ -86,7 +88,7 @@ namespace TrophyStones
             BossStoneBonemassBuildable.Name.English("Bonemass Stone");
             BossStoneBonemassBuildable.Description.English("");
             BossStoneBonemassBuildable.RequiredItems.Add("Stone", 20, true);
-            BossStoneBonemassBuildable.RequiredItems.Add("Guck", 10, true);
+            BossStoneBonemassBuildable.RequiredItems.Add("Iron", 10, true);
             BossStoneBonemassBuildable.Category.Add(PieceManager.BuildPieceCategory.Misc);
             BossStoneBonemassBuildable.Crafting.Set(PieceManager.CraftingTable.StoneCutter);
             BossStoneBonemassBuildable.Snapshot();
@@ -95,7 +97,7 @@ namespace TrophyStones
             BossStoneDragonQueenBuildable.Name.English("Dragon Queen Stone");
             BossStoneDragonQueenBuildable.Description.English("");
             BossStoneDragonQueenBuildable.RequiredItems.Add("Stone", 20, true);
-            BossStoneDragonQueenBuildable.RequiredItems.Add("Obsidian", 10, true);
+            BossStoneDragonQueenBuildable.RequiredItems.Add("Silver", 10, true);
             BossStoneDragonQueenBuildable.Category.Add(PieceManager.BuildPieceCategory.Misc);
             BossStoneDragonQueenBuildable.Crafting.Set(PieceManager.CraftingTable.StoneCutter);
             BossStoneDragonQueenBuildable.Snapshot();
@@ -104,7 +106,7 @@ namespace TrophyStones
             BossStoneYagluthBuildable.Name.English("Yagluth Stone");
             BossStoneYagluthBuildable.Description.English("");
             BossStoneYagluthBuildable.RequiredItems.Add("Stone", 20, true);
-            BossStoneYagluthBuildable.RequiredItems.Add("LinenThread", 10, true);
+            BossStoneYagluthBuildable.RequiredItems.Add("BlackMetal", 10, true);
             BossStoneYagluthBuildable.Category.Add(PieceManager.BuildPieceCategory.Misc);
             BossStoneYagluthBuildable.Crafting.Set(PieceManager.CraftingTable.StoneCutter);
             BossStoneYagluthBuildable.Snapshot();
@@ -113,20 +115,37 @@ namespace TrophyStones
             BossStoneTheQueenBuildable.Name.English("Seeker Queen Stone");
             BossStoneTheQueenBuildable.Description.English("");
             BossStoneTheQueenBuildable.RequiredItems.Add("Stone", 20, true);
-            BossStoneTheQueenBuildable.RequiredItems.Add("BlackMarble", 10, true);
+            BossStoneTheQueenBuildable.RequiredItems.Add("Eitr", 10, true);
             BossStoneTheQueenBuildable.Category.Add(PieceManager.BuildPieceCategory.Misc);
             BossStoneTheQueenBuildable.Crafting.Set(PieceManager.CraftingTable.StoneCutter);
             BossStoneTheQueenBuildable.Snapshot();
-            
-            BuildPiece VegvisirHaldorBuildable = new("trophystonebundle", "Vegvisir_Haldor", "assets");
-            VegvisirHaldorBuildable.Name.English("Trader Vegvisir");
-            VegvisirHaldorBuildable.Description.English("");
-            VegvisirHaldorBuildable.RequiredItems.Add("Stone", 20, true);
-            VegvisirHaldorBuildable.Category.Add(PieceManager.BuildPieceCategory.Misc);
-            VegvisirHaldorBuildable.Crafting.Set(PieceManager.CraftingTable.StoneCutter);
-            VegvisirHaldorBuildable.Snapshot();
-            
+
+            BuildPiece StartStone = new("trophystonebundle", "StartStone", "assets");
+            StartStone.Name.English("Forsaken Stone");
+            StartStone.Description.English("");
+            StartStone.RequiredItems.Add("Stone", 20, true);
+            StartStone.Category.Add(PieceManager.BuildPieceCategory.Misc);
+            StartStone.Crafting.Set(PieceManager.CraftingTable.StoneCutter);
+            StartStone.Snapshot();
+
             #endregion
+            
+            Item SwordForsaken = new("trophystonebundle", "SwordForsaken_RS", "assets");
+            SwordForsaken.Name.English("Forsaken Sword");
+            SwordForsaken.Description.English("Held together by odin's will.");
+            SwordForsaken.Crafting.Add(CraftingTable.ArtisanTable, 1);
+            SwordForsaken.RequiredItems.Add("SwordCheat", 1);
+            SwordForsaken.CraftAmount = 1;
+            
+            CustomSE ForsakenSwordEffect = new("Forsaken");
+            ForsakenSwordEffect.Name.English("Forsaken");
+            ForsakenSwordEffect.Type = EffectType.Equip;
+            ForsakenSwordEffect.Effect.m_startMessageType = MessageHud.MessageType.TopLeft;
+            ForsakenSwordEffect.Effect.m_startMessage = "You hear the whispers of Skjálf";
+            ForsakenSwordEffect.Effect.m_stopMessageType = MessageHud.MessageType.TopLeft;
+            ForsakenSwordEffect.Effect.m_stopMessage = "Skjálf urges you to find her";
+            ForsakenSwordEffect.Effect.m_tooltip = "Find the sacred altar to gain new talents";
+            ForsakenSwordEffect.AddSEToPrefab(ForsakenSwordEffect, "SwordForsaken_RS");
 
             // #region SkillManager Example Code
             //
@@ -213,17 +232,7 @@ namespace TrophyStones
             
             // #region StatusEffectManager Example Code
             //
-            // CustomSE mycooleffect = new("Toxicity");
-            // mycooleffect.Name.English("Toxicity");
-            // mycooleffect.Type = EffectType.Consume;
-            // mycooleffect.IconSprite = null;
-            // mycooleffect.Name.German("Toxizität");
-            // mycooleffect.Effect.m_startMessageType = MessageHud.MessageType.TopLeft;
-            // mycooleffect.Effect.m_startMessage = "My Cool Status Effect Started";
-            // mycooleffect.Effect.m_stopMessageType = MessageHud.MessageType.TopLeft;
-            // mycooleffect.Effect.m_stopMessage = "Not cool anymore, ending effect.";
-            // mycooleffect.Effect.m_tooltip = "<color=orange>Toxic damage over time</color>";
-            // mycooleffect.AddSEToPrefab(mycooleffect, "SwordIron");
+            
             //
             // CustomSE drunkeffect = new("se_drunk", "se_drunk_effect");
             // drunkeffect.Name.English("Drunk"); // You can use this to fix the display name in code
@@ -240,8 +249,8 @@ namespace TrophyStones
             //     "<color=red>Your vision is blurry</color>"; // Tooltip that will describe the effect applied to the player
             // drunkeffect.AddSEToPrefab(drunkeffect,
             //     "TankardAnniversary"); // Adds the status effect to the Anniversary Tankard. Applies when equipped.
-            //
-            // // Create a new status effect in code and apply it to a prefab.
+            
+            // Create a new status effect in code and apply it to a prefab.
             // CustomSE codeSE = new("CodeStatusEffect");
             // codeSE.Name.English("New Effect");
             // codeSE.Type = EffectType.Consume; // Set the type of status effect this should be.
@@ -257,27 +266,12 @@ namespace TrophyStones
             //     "<color=green>You now have Mod Dev POWER!</color>"; // Tooltip that will describe the effect applied to the player
             // codeSE.AddSEToPrefab(codeSE,
             //     "SwordCheat"); // Adds the status effect to the Cheat Sword. Applies when equipped.
-            //
-            // #endregion
             
+            // #endregion
+            //
             // #region ItemManager Example Code
-            //
-            // Item ironFangAxe = new("ironfang", "IronFangAxe", "IronFang");
-            // ironFangAxe.Name.English("Iron Fang Axe"); // You can use this to fix the display name in code
-            // ironFangAxe.Description.English("A sharp blade made of iron.");
-            // ironFangAxe.Name.German("Eisenzahnaxt"); // Or add translations for other languages
-            // ironFangAxe.Description.German("Eine sehr scharfe Axt, bestehend aus Eisen und Wolfszähnen.");
-            // ironFangAxe.Crafting.Add("MyAmazingCraftingStation",
-            //     3); // Custom crafting stations can be specified as a string
-            // ironFangAxe.RequiredItems.Add("Iron", 120);
-            // ironFangAxe.RequiredItems.Add("WolfFang", 20);
-            // ironFangAxe.RequiredItems.Add("Silver", 40);
-            // ironFangAxe.RequiredUpgradeItems
-            //     .Add("Iron", 20); // Upgrade requirements are per item, even if you craft two at the same time
-            // ironFangAxe.RequiredUpgradeItems.Add("Silver",
-            //     10); // 10 Silver: You need 10 silver for level 2, 20 silver for level 3, 30 silver for level 4
-            // ironFangAxe.CraftAmount = 2; // We really want to dual wield these
-            //
+            
+            
             //
             // // If you have something that shouldn't go into the ObjectDB, like vfx or sfx that only need to be added to ZNetScene
             // ItemManager.PrefabManager.RegisterPrefab(PrefabManager.RegisterAssetBundle("ironfang"), "axeVisual",
@@ -318,7 +312,7 @@ namespace TrophyStones
             //     2); // A Greydwarf has a 30% chance, to drop 1-2 hero shields.
             //
             // #endregion
-            
+            //
             // #region CreatureManager Example Code
             //
             // Creature wereBearBlack = new("werebear", "WereBearBlack")

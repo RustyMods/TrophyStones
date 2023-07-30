@@ -125,6 +125,8 @@
         <Compile Include="Managers\StatusEffectManager.cs" />
         <Compile Include="Plugin.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
+        <Compile Include="StartStonePatch.cs" />
+        <Compile Include="SwordForsakenPatch.cs" />
         <Compile Include="VegvisirPatch.cs" />
         <Compile Include="VersionHandshake.cs" />
     </ItemGroup>
@@ -138,6 +140,7 @@
         <Content Include="assets\EikthyrBossStoneIcon.png" />
         <Content Include="environment.props" />
         <Content Include="icons\README.txt" />
+        <Content Include="icons\SwordForsakenRSIcon.png" />
         <Content Include="ILRepack.targets" />
         <Content Include="Libs\CreatureManager.dll">
             <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

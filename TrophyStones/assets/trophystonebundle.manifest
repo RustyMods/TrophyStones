@@ -1,12 +1,12 @@
 ManifestFileVersion: 0
-CRC: 2601229411
+CRC: 3265181268
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 5dc029b8dc1f412d1dd191c434e21393
+    Hash: ff1c2a0fa3c260485131500b155cc245
   TypeTreeHash:
     serializedVersion: 2
-    Hash: ad76c33c91f64197b6e54c38578313c1
+    Hash: 2cb41e55be62a822c3425d99bad6c94a
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -25,18 +25,20 @@ ClassTypes:
   Script: {instanceID: 0}
 - Class: 48
   Script: {instanceID: 0}
+- Class: 54
+  Script: {instanceID: 0}
 - Class: 64
   Script: {instanceID: 0}
 - Class: 65
-  Script: {instanceID: 0}
-- Class: 108
   Script: {instanceID: 0}
 - Class: 114
   Script: {fileID: 895252998, guid: c1b78fa918b030faf1c1f6f6164daeb2, type: 3}
 - Class: 114
   Script: {fileID: 1521249158, guid: c1b78fa918b030faf1c1f6f6164daeb2, type: 3}
 - Class: 114
-  Script: {fileID: 1445782272, guid: c1b78fa918b030faf1c1f6f6164daeb2, type: 3}
+  Script: {fileID: 1109157524, guid: c1b78fa918b030faf1c1f6f6164daeb2, type: 3}
+- Class: 114
+  Script: {fileID: 825357479, guid: c1b78fa918b030faf1c1f6f6164daeb2, type: 3}
 - Class: 114
   Script: {fileID: 463273065, guid: c1b78fa918b030faf1c1f6f6164daeb2, type: 3}
 - Class: 114
@@ -44,10 +46,12 @@ ClassTypes:
 - Class: 114
   Script: {fileID: 199985220, guid: c1b78fa918b030faf1c1f6f6164daeb2, type: 3}
 - Class: 114
-  Script: {fileID: -623399428, guid: c1b78fa918b030faf1c1f6f6164daeb2, type: 3}
-- Class: 114
-  Script: {fileID: -1275016705, guid: c1b78fa918b030faf1c1f6f6164daeb2, type: 3}
+  Script: {fileID: -585565762, guid: c1b78fa918b030faf1c1f6f6164daeb2, type: 3}
 - Class: 115
+  Script: {instanceID: 0}
+- Class: 198
+  Script: {instanceID: 0}
+- Class: 199
   Script: {instanceID: 0}
 - Class: 205
   Script: {instanceID: 0}
@@ -55,14 +59,23 @@ ClassTypes:
   Script: {instanceID: 0}
 SerializeReferenceClassIdentifiers:
 - AssemblyName: assembly_valheim
+  ClassName: Attack
+- AssemblyName: assembly_valheim
   ClassName: EffectList
 - AssemblyName: assembly_valheim
   ClassName: HitData/DamageModifiers
+- AssemblyName: assembly_valheim
+  ClassName: HitData/DamageTypes
+- AssemblyName: assembly_valheim
+  ClassName: ItemDrop/ItemData
+- AssemblyName: assembly_valheim
+  ClassName: ItemDrop/ItemData/SharedData
 Assets:
 - Assets/_Custom_Items/BossStone_TheQueen_Buildable.prefab
 - Assets/_Custom_Items/BossStone_Yagluth_Buildable.prefab
 - Assets/_Custom_Items/BossStone_TheElder_Buildable.prefab
-- Assets/_Custom_Items/Vegvisir_Haldor.prefab
+- Assets/_Custom_Items/SwordForsaken_RS.prefab
+- Assets/_Custom_Items/StartStone.prefab
 - Assets/_Custom_Items/BossStone_DragonQueen_Buildable.prefab
 - Assets/_Custom_Items/BossStone_Bonemass_Buildable.prefab
 - Assets/_Custom_Items/BossStone_Eikthyr_Buildable.prefab
