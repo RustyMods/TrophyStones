@@ -113,6 +113,7 @@
     </ItemGroup>
     <ItemGroup>
         <Compile Include="BossStonePatch.cs" />
+        <Compile Include="CustomOfferAltarPatch.cs" />
         <Compile Include="Managers\CreatureManager.cs" />
         <Compile Include="Managers\ItemDataManager.cs" />
         <Compile Include="Managers\ItemManager.cs" />
@@ -125,7 +126,7 @@
         <Compile Include="Managers\StatusEffectManager.cs" />
         <Compile Include="Plugin.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
-        <Compile Include="StartStonePatch.cs" />
+        <Compile Include="SetForsakenStoneData.cs" />
         <Compile Include="SwordForsakenPatch.cs" />
         <Compile Include="VegvisirPatch.cs" />
         <Compile Include="VersionHandshake.cs" />

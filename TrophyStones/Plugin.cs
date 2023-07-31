@@ -127,6 +127,26 @@ namespace TrophyStones
             StartStone.Category.Add(PieceManager.BuildPieceCategory.Misc);
             StartStone.Crafting.Set(PieceManager.CraftingTable.StoneCutter);
             StartStone.Snapshot();
+            
+            StatusEffectManager.EffectManager.RegisterCustomSE("trophystonebundle", "GP_Custom_Shield", "assets");
+            
+            BuildPiece StartStone1 = new("trophystonebundle", "StartStone1", "assets");
+            StartStone1.Name.English("Forsaken Stone Heal");
+            StartStone1.Description.English("");
+            StartStone1.RequiredItems.Add("Stone", 20, true);
+            StartStone1.Category.Add(PieceManager.BuildPieceCategory.Misc);
+            StartStone1.Crafting.Set(PieceManager.CraftingTable.StoneCutter);
+            StartStone1.Snapshot();
+
+            StatusEffectManager.EffectManager.RegisterCustomSE("trophystonebundle", "GP_Custom_Heal", "assets");
+
+            BuildPiece CustomOfferingAltar = new("trophystonebundle", "CustomOfferAltar", "assets");
+            CustomOfferingAltar.Name.English("Offering Stone");
+            CustomOfferingAltar.Description.English("");
+            CustomOfferingAltar.RequiredItems.Add("Stone", 20, true);
+            CustomOfferingAltar.Category.Add(PieceManager.BuildPieceCategory.Misc);
+            CustomOfferingAltar.Crafting.Set(PieceManager.CraftingTable.StoneCutter);
+            CustomOfferingAltar.Snapshot();
 
             #endregion
             
@@ -146,7 +166,7 @@ namespace TrophyStones
             ForsakenSwordEffect.Effect.m_stopMessage = "Skjálf urges you to find her";
             ForsakenSwordEffect.Effect.m_tooltip = "Find the sacred altar to gain new talents";
             ForsakenSwordEffect.AddSEToPrefab(ForsakenSwordEffect, "SwordForsaken_RS");
-
+            
             // #region SkillManager Example Code
             //
             // Skill
