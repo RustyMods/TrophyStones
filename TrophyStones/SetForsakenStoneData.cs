@@ -102,7 +102,11 @@ public class SetForsakenStoneData
         )
     {
         GameObject ForsakenStone1 = scene.GetPrefab(objName);
-        SetPieceScript(scene, ForsakenStone1, placementEffectName1, placementEffectName2);
+        SetPieceScript(
+            scene, 
+            ForsakenStone1, 
+            placementEffectName1, 
+            placementEffectName2);
         SetWearNTearScript(
             scene, 
             ForsakenStone1, 
@@ -134,25 +138,38 @@ public class SetForsakenStoneData
     private static void SetPieceScript(
         ZNetScene scene, 
         GameObject gameObject, 
-        params string[] placementEffectNames)
+        string effectName1 = "vfx_Place_stone_wall_2x1",
+        string effectName2 = "sfx_build_hammer_stone")
     {
-        EffectList.EffectData[] placementEffects = new EffectList.EffectData[placementEffectNames.Length];
-        foreach (var effect in placementEffectNames)
+        EffectList.EffectData effect1 = new EffectList.EffectData
         {
-            EffectList.EffectData data = new EffectList.EffectData
-            {
-                m_prefab = scene.GetPrefab(effect),
-                m_enabled = true,
-                m_variant = -1,
-                m_attach = false,
-                m_inheritParentRotation = false,
-                m_inheritParentScale = false,
-                m_randomRotation = false,
-                m_scale = false,
-                m_childTransform = ""
-            };
-            placementEffects.AddItem(data);
-        }
+            m_prefab = scene.GetPrefab(effectName1),
+            m_enabled = true,
+            m_variant = -1,
+            m_attach = false,
+            m_inheritParentRotation = false,
+            m_inheritParentScale = false,
+            m_randomRotation = false,
+            m_scale = false,
+            m_childTransform = ""
+        };
+        EffectList.EffectData effect2 = new EffectList.EffectData
+        {
+            m_prefab = scene.GetPrefab(effectName2),
+            m_enabled = true,
+            m_variant = -1,
+            m_attach = false,
+            m_inheritParentRotation = false,
+            m_inheritParentScale = false,
+            m_randomRotation = false,
+            m_scale = false,
+            m_childTransform = ""
+        };
+        EffectList.EffectData[] placementEffects = new EffectList.EffectData[2]
+        {
+            effect1,
+            effect2
+        };
 
         Piece pieceScript = gameObject.GetComponent<Piece>();
         pieceScript.m_placeEffect.m_effectPrefabs = placementEffects;
